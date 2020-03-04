@@ -7,6 +7,7 @@ You will need the following installed on your local machine:
 2. Terminal program such as [Git Bash](https://gitforwindows.org/), [Hyper](https://hyper.is/)
 3. Code editor program such as [Sublime](https://www.sublimetext.com/download), [Atom](https://atom.io/)
 4. [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+5. [Git](https://git-scm.com/downloads) (not required if you installed Git Bash)
 
 ## App development
 ### Initiating the Express application
