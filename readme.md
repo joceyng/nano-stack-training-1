@@ -108,18 +108,18 @@ app.listen(port, () => {
 ```
 web: node app.js
 ```
-4. Log into Github and create a new public repository. Copy the URL to your git repo 
-eg. https://githubs.com/[your username]/[your repo name].git
+4. Log into Github and create a new public repository. Copy the SSH URL to your git repo 
+eg. git@github.com:[your username]/[your repo name].git
 
 ```
 git init 
 git add .
 git commit -m “first commit”
-git remote add origin https://githubs.com/[your username]/[your repo name].git
+git remote add origin git@github.com:[your username]/[your repo name].git
 ```
 5. Push the application files in your local git repository to github using `git push origin master`
 6. Log into Cyclic > click on the Link your own tab > link the repository you have just created > Approve & Install
-7. Your web application is now accessible on a public URL i.e. https://stark-escarpment-62732.herokuapp.com/ & https://serene-reaches-92431.herokuapp.com/
+7. Your web application is now accessible on a public URL i.e. https://ill-pink-magpie-garb.cyclic.app/
 
 ## Project directory structure
 Your final project directory should have the following structure:
