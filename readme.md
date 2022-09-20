@@ -6,8 +6,11 @@ You will need the following installed on your local machine:
 1. [NodeJS and NPM](http://treehouse.github.io/installation-guides/)
 2. Terminal program such as [Git Bash](https://gitforwindows.org/), [Hyper](https://hyper.is/)
 3. Code editor program such as [Sublime](https://www.sublimetext.com/download), [Atom](https://atom.io/)
-4. [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
-5. [Git](https://git-scm.com/downloads) (not required if you installed Git Bash)
+4. [Git](https://git-scm.com/downloads) (not required if you installed Git Bash)
+
+You will need to 
+1. Sign up for a Github account
+2. Sign into Cyclic account with your Github account
 
 ## App development
 ### Initiating the Express application
@@ -92,8 +95,8 @@ app.get("/", function(req, res){
 3. Access localhost:3000 on your browser and it should display a page based on the HTML codes you inserted in the page template
 4. Press Ctrl + C in the terminal to stop running the app if you used `node app.js` to start the app
 
-### Deploy application to Heroku
-1. Make changes to the listen method in your app.js file since you cannot define a port number when using Heroku 
+### Deploy application to Cyclic
+1. Make changes to the listen method in your app.js file since you cannot define a port number when using Cyclic 
 ```
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
@@ -105,16 +108,18 @@ app.listen(port, () => {
 ```
 web: node app.js
 ```
-4. Create a local git repository in your project directory (e.g. /portfolio-app) and commit the files
+4. Log into Github and create a new public repository. Copy the URL to your git repo 
+eg. https://githubs.com/[your username]/[your repo name].git
+
 ```
 git init 
 git add .
 git commit -m “first commit”
+git remote add origin https://githubs.com/[your username]/[your repo name].git
 ```
-5. In your terminal, login to heroku using `heroku login`
-6. Create a heroku app using `heroku create`
-7. Push the application files in your local git repository to heroku using `git push heroku master`
-8. Your web application is now accessible on a public URL i.e. https://stark-escarpment-62732.herokuapp.com/ & https://serene-reaches-92431.herokuapp.com/
+5. Push the application files in your local git repository to github using `git push origin master`
+6. Log into Cyclic > click on the Link your own tab > link the repository you have just created > Approve & Install
+7. Your web application is now accessible on a public URL i.e. https://stark-escarpment-62732.herokuapp.com/ & https://serene-reaches-92431.herokuapp.com/
 
 ## Project directory structure
 Your final project directory should have the following structure:
