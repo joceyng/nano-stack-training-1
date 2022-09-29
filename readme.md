@@ -96,19 +96,7 @@ app.get("/", function(req, res){
 4. Press Ctrl + C in the terminal to stop running the app if you used `node app.js` to start the app
 
 ### Deploy application to Cyclic
-1. Make changes to the listen method in your app.js file since you cannot define a port number when using Cyclic 
-```
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log('This app is running on port' + port);
-});
-```
-2. Create a PROC file in the project directory using `touch Procfile`. This file will contain the commands that will be executed by the server to run the application.
-3. Edit Procfile in your code editor and add this line
-```
-web: node app.js
-```
-4. Log into Github and create a new public repository. Copy the SSH URL to your git repo 
+1. Log into Github and create a new public repository. Copy the SSH URL to your git repo 
 eg. git@github.com:[your username]/[your repo name].git
 
 ```
@@ -117,9 +105,9 @@ git add .
 git commit -m “first commit”
 git remote add origin git@github.com:[your username]/[your repo name].git
 ```
-5. Push the application files in your local git repository to github using `git push origin master`
-6. Log into Cyclic > click on the Link your own tab > link the repository you have just created > Approve & Install
-7. Your web application is now accessible on a public URL i.e. https://ill-pink-magpie-garb.cyclic.app/
+2. Push the application files in your local git repository to github using `git push origin master`
+3. Log into Cyclic > click on the Link your own tab > link the repository you have just created > Approve & Install
+4. Your web application is now accessible on a public URL i.e. https://dark-bee-dirndl.cyclic.app/
 
 ## Project directory structure
 Your final project directory should have the following structure:
